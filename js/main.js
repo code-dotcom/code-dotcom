@@ -14,10 +14,16 @@
 
 	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
+		
+		if($(window).height() > 1024){
+			console.log($(window).height())
+			console.log("Applying fullHeight()")
 			$('.js-fullheight').css('height', $(window).height());
-		});
+			$(window).resize(function(){
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+		
 
 	};
 	fullHeight();

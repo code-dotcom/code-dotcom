@@ -10175,7 +10175,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .ftco-navbar-light.scrolled .nav-item>.nav-link {
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
 }
 
 @media (max-width: 991.98px) {
@@ -10235,7 +10235,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .ftco-navbar-light.scrolled .nav-link {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .ftco-navbar-light.scrolled .nav-link.active {
@@ -10247,7 +10247,6 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   -webkit-transition: .3s all ease-out;
   -o-transition: .3s all ease-out;
   transition: .3s all ease-out;
-  box-shadow: 0px 2px #bdbdbd;
 }
 
 .ftco-navbar-light.scrolled.sleep {
@@ -10258,10 +10257,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .ftco-navbar-light.scrolled .navbar-brand {
   color: #000000;
-  /* padding-top: 1rem; */
-  /* padding-bottom: 1rem; */
-  /* font-size: 24px; */
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 .navbar-brand {
@@ -10666,7 +10662,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 #navi li {
   font-weight: 700;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #navi li a {
@@ -10694,15 +10690,20 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .page {
   width: 100%;
-  margin-bottom: 7em;
+  margin-bottom: 20px;
   border-radius: 5px;
   padding: 30px;
 }
 
 .page .heading {
   font-weight: 700;
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page-text-wrapper .page-text {
+  font-size: 14px;
+  letter-spacing: 0.5px
 }
 
 .testimony-section {
@@ -11519,12 +11520,45 @@ textarea.form-control {
   stroke-linecap: round;
 }
 
+/* Custom CSS */
+
+.page .page-text-wrapper {
+  box-sizing: border-box;
+}
+
+.page-text-wrapper img {
+  /* flex: 1; */
+  width: 20vh;
+  float: left;
+  margin: 0px 16px 16px 8px;
+}
+
+.page-text-wrapper p {
+  /* flex: 2 */
+  /* display: inline; */
+}
+
+@media (max-width: 991.98px) {}
+
 @media (max-width: 991.98px) {
+  .ftco-navbar-light.scrolled.awake {
+    box-shadow: 0px 2px #bdbdbd;
+  }
+  .ftco-navbar-light.scrolled .nav-link {
+    color: #ffffff !important;
+  }
+  .hero-wrap .slider-text {
+    height: 500px;
+  }
+  .ftco-navbar-light.scrolled .navbar-brand {
+    color: #000000;
+    font-size: 1em;
+  }
   .page .heading {
     font-size: 1.25em;
     margin-bottom: 10px;
   }
-  .page .page-text {
+  .page-text-wrapper .page-text {
     font-size: 0.9em;
     text-align: justify;
     letter-spacing: 0.5px
