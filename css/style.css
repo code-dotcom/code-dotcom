@@ -11738,3 +11738,9 @@ textarea.form-control {
     box-shadow: 0 0 0 0 rgba(23, 185, 120, 0);
   }
 }
+
+
+.price-btn:hover{
+  background-color: #007bff !important;
+  color: white !important
+} 
